@@ -11347,11 +11347,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/cloud_bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
+    background: url("../assets/img/header_bg.jpg") no-repeat fixed center;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11392,7 +11388,7 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/contact_bg.jpg");
 }
 section#contact .section-heading {
   color: #fff;
