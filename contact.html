@@ -57,39 +57,91 @@
                 <h3 class="section-subheading text-white">to see how we can help your accounts receivable department.</h3>
 
             </div>
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="row align-items-stretch mb-5">
+            <form class="container" id="contactForm">
+                <div class="row align-items-stretch">
                     <div class="col-md-6">
                         <div class="form-group">
                             <!-- Name input-->
                             <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
                         </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="form-group">
                             <!-- Email address input-->
                             <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
                         </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="form-group">
-                            <!-- Email address input-->
+                            <!-- address address input-->
                             <input class="form-control" id="email" type="email" placeholder="Your Address *" data-sb-validations="required,email" />
                         </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="form-group mb-md-0">
                             <!-- Phone number input-->
                             <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="form-group mb-md-0">
-                            <!-- Message input-->
+                            <!-- subject input-->
                             <input class="form-control" id="phone" type="tel" placeholder="Subject *" data-sb-validations="required" />
                         </div>
+                    </div>
+                    <div class="col-md-12">
                         <div class="form-group form-group-textarea mb-md-0">
                             <!-- Message input-->
                             <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
                         </div>
-                        <div><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div> <!-- info@collectionbureau.biz-->
                     </div>
                 </div>
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <button class="btn btn-xl btn-primary text-uppercase disabled" id="submitButton" type="submit">Send Message</button>
+                    </div> <!-- info@collectionbureau.biz-->
+                    <div class="col-md-8"></div>
+                </div>
             </form>
+        </div>
+
+        <div class="container">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-2 mb-2 mb-md-0"></div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Missoula Office</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">
+                                212 E. Spruce Street
+                                <br />
+                                Missoula, MT 59802
+                                <br />
+                                1-800-814-2342 - toll free
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-info mb-2"></i>
+                            <h4 class="text-uppercase m-0">Billings Office</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">
+                                3333 2nd Ave N, Suite 200
+                                <br />
+                                Billings, MT 59101
+                                <br />
+                                1-888-864-7155 - toll free<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-2 mb-md-0"></div>
+            </div>
         </div>
     </section>
 
