@@ -17,18 +17,6 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar 
     navbarShrink();
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -43,3 +31,35 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$('document').ready(function () {
+    if (document.getElementById('submitButton') instanceof Object) 
+        $('[id="submitButton"]').click(function () {
+
+            var contactFields = {
+                'name': '',
+                'email': '',
+                'address': '',
+                'phone': '',
+                'subject': '',
+                'message': ''
+            };
+            var form_ids = ['name', 'email', 'address', 'phone', 'subject', 'message'];
+            var contactInfo = ['name', 'phone', 'email', 'address'];
+
+            form_ids.forEach(id => {
+                contactFields[id] = $('#'+id).val();
+            });
+
+            emailBody = contactFields['message'].replaceAll('\n', '%0D%0A');
+
+            emailBody += '%0D%0A%0D%0AContact Information:%0D%0A';
+            contactInfo.forEach(id => {
+                emailBody += id + ': ' + contactFields[id] + '%0D%0A'
+            });
+
+            window.location.href = `mailto:info@collectionbureau.biz?subject=${contactFields['subject']}&body=${emailBody}`;
+    });
+});
+
+
