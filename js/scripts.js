@@ -58,7 +58,7 @@ $('document').ready(function () {
                 emailBody += id + ': ' + contactFields[id] + '%0D%0A'
             });
 
-            window.location.href = `mailto:info@collectionbureau.biz?subject=${contactFields['subject']}&body=${emailBody}`;
+            window.top.location = `mailto:info@collectionbureau.biz?subject=${contactFields['subject']}&body=${emailBody}`;
     });
 });
 
