@@ -76,7 +76,25 @@ $('document').ready(function () {
                     </div>
                 </div>
             `;
+
+            const consumerHeading = `
+                 Due to privacy concerns, we do not communicate via e-mail with consumers regarding their accounts.
+                 We do, however, welcome your feedback.
+                 <br />
+                 To submit a complaint or provide feedback to us, please complete the form below.
+                 <br />
+                 <br />
+                 If you would like a reply to your message, please indicate if you would like us to respond by telephone or mail.
+                 <br />
+                 <br />
+                 If you prefer to speak to a representative, call (800) 814-2342 or (406) 721-4454.
+                 <br />
+                 <br />
+                 Thank you for your feedback!
+            `;
+
             $('[id="contactForm"]').html(consumerForm);
+            $('[id="subheading"]').html(consumerHeading);
             form = 'consumer';
             $('[id="submitButton"]').show();
 
@@ -117,7 +135,20 @@ $('document').ready(function () {
                     </div>
                 </div>
             `;
+
+            const clientHeading = `
+                Clients and prospective clients: please fill out the contact form and we will respond as quickly as we can during normal business hours.
+                 <br />
+                 Monday-Friday, 8am-5pm MT.
+                 <br />
+                 Or
+                 <br />
+                 Please call us at (800) 814-2342 or (406) 721-4454
+            `;
+
+
             $('[id="contactForm"]').html(clientForm);
+            $('[id="subheading"]').html(clientHeading);
             form = 'client';
             $('[id="submitButton"]').show();
 
