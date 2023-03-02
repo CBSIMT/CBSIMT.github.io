@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Billing</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://cbsonlinepayments.com/">On-line Payments</a></li>
@@ -52,100 +52,76 @@
         </div>
     </header>
 
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-white">to see how we can help your accounts receivable department.</h3>
+ <section class="page-section" id="contact">
+     <div class="container">
+         <div class="text-center">
+             <h2 class="section-heading text-uppercase">Contact Us</h2>
+             <h3 class="section-subheading text-white">to see how we can help your accounts receivable department.</h3>
 
-            </div>
-            <form class="container" id="contactForm" action="mailto:info@collectionbureau.biz" method="post" enctype="multipart/form-data">
-                <div class="row align-items-stretch">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Name *" required />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Email input-->
-                            <input class="form-control" id="email" type="email" placeholder="Email *" required />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- address input-->
-                            <input class="form-control" id="address" type="text" placeholder="Address *" required />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Phone *" required />
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group mb-md-0">
-                            <!-- subject input-->
-                            <input class="form-control" id="subject" type="text" placeholder="Subject *" required />
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Your Message *" required></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-5">
-                    <div class="col-md-4">
-                        <a class="btn btn-xl btn-primary text-uppercase" id="submitButton" type="submit" target="_blank">Send Message</a>
-                    </div>
-                    <div class="col-md-8"></div>
-                </div>
-            </form>
-        </div>
+             <div class="container">
+                 <div class="row align-items-stretch" style="padding-bottom: 4rem;">
+                     <div class="col-md-4"></div>
+                     <div class="col-md-2">
+                         <button type="button" class="btn btn-primary btn-lg" id="client">Client/Business</button>
+                     </div>
+                     <div class="col-md-2">
+                         <button type="button" class="btn btn-secondary btn-lg" id="consumer">Consumer</button>
+                     </div>
+                     <div class="col-md-4"></div>
+                 </div>
+             </div>
+         </div>
+         <form class="container" id="contactForm" action="mailto:info@collectionbureau.biz" method="post" enctype="multipart/form-data"></form>
+         <div class="container">
+             <div class="row mb-5">
+                 <div class="col-md-6">
+                     <button class="btn btn-xl btn-primary text-uppercase" id="submitButton" type="submit" target="_blank" style="display:none;">Send Message</button>
+                 </div>
+             </div>
+             <div class="col-md-6"></div>
+         </div>
 
-        <div class="container">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-2 mb-2 mb-md-0"></div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Missoula Office</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">
-                                212 E. Spruce Street
-                                <br />
-                                Missoula, MT 59802
-                                <br />
-                                1-800-814-2342 - toll free
-                            </div>
+     </div>
+
+    <div class="container">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-2 mb-2 mb-md-0"></div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Missoula Office</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">
+                            212 E. Spruce Street
+                            <br />
+                            Missoula, MT 59802
+                            <br />
+                            1-800-814-2342 - toll free
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-info mb-2"></i>
-                            <h4 class="text-uppercase m-0">Billings Office</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">
-                                3333 2nd Ave N, Suite 200
-                                <br />
-                                Billings, MT 59101
-                                <br />
-                                1-888-864-7155 - toll free<br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 mb-2 mb-md-0"></div>
             </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-info mb-2"></i>
+                        <h4 class="text-uppercase m-0">Billings Office</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">
+                            3333 2nd Ave N, Suite 200
+                            <br />
+                            Billings, MT 59101
+                            <br />
+                            1-888-864-7155 - toll free<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-2 mb-md-0"></div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer-->
     <footer class="footer bg-black py-4 text-white-50">
